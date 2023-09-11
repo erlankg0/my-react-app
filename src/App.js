@@ -1,48 +1,23 @@
-import logo from './logo.svg'
 import './App.css'
+import Footer from './footer'
+import HeaderComponent from './header'
 import './style.css' // import style
+import Technologies from './technologies'
 
 // Компонент - это функция или класс, который возвращающая разметку (JSX)
 
-const headerComponent = () => {
-	return (
-		<header>
-			<ul>
-				<li>
-					<a>Home</a>
-				</li>
-				<li>
-					<a>Main</a>
-				</li>
-				<li>
-					<a>Shop</a>
-				</li>
-				<li>
-					<a>Login</a>
-				</li>
-			</ul>
-		</header>
-	)
-}
-
 const App = () => {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				{headerComponent()}
-				<img src={logo} className='App-logo' alt='logo' />
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Learn React
-				</a>
-			</header>
+		<div className='App container'>
+			<section className='nav'>{HeaderComponent()}</section>
+			<section>
+				<div className='container'>{Technologies()}</div>
+			</section>
+			<section>
+				<div className='container'>{Footer()}</div>
+			</section>
 		</div>
 	)
 }
-
 
 export default App
