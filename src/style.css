@@ -1,0 +1,30 @@
+.btn{
+  padding: 20px 15px;
+  border-color: cadetblue;
+  font-size: 15px;
+  font-family: 'monolog' serif;
+  color: blueviolet;
+  border-radius: 15px;
+  background-color: rgb(10, 248, 185);
+}
+
+ul{
+  list-style-type: georgian;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+li{
+  list-style-type: square;
+}
+
+li a{
+  color: burlywood;
+
+}
+li a:hover{
+  color: aqua;
+  transition: 0.5 all;
+}
